@@ -52,3 +52,12 @@ To start the Flask server, run:
 The application will run at http://127.0.0.1:5000/.
 
 
+## Frontend Url
+https://rate-limitter-frontend.vercel.app/
+
+
+## Screenshots
+<img width="1459" alt="Screenshot 2024-09-22 at 11 43 03 PM" src="https://github.com/user-attachments/assets/2757c15c-23e2-4005-a204-da596c07f75e">
+
+
+
