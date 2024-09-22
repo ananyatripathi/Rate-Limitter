@@ -11,12 +11,6 @@ Each algorithm has its own API endpoint for configuration and handling requests.
 ## Table of Contents
 - [Installation](#installation)
 - [Run the Application](#run-the-application)
-- [API Endpoints](#api-endpoints)
-  - [Token Bucket Algorithm](#token-bucket-algorithm)
-  - [Leaking Bucket Algorithm](#leaking-bucket-algorithm)
-  - [Fixed Window Counter Algorithm](#fixed-window-counter-algorithm)
-  - [Sliding Window Log Algorithm](#sliding-window-log-algorithm)
-- [Dependencies](#dependencies)
 
 ## Installation
 
@@ -26,10 +20,35 @@ Each algorithm has its own API endpoint for configuration and handling requests.
    git clone <repository_url>
    cd <repository_folder>
    ```
-2.	Create a virtual environment and activate it:
    
+2. Create a virtual environment and activate it:
+   
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-    python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-4.	
+   
+3.	Install dependencies:
+   
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4.	Install the required Flask and CORS packages if they aren’t listed in requirements.txt:
+   
+   ```bash
+   pip install Flask flask-cors pydantic
+   ```
+
+
+## Run the application
+
+To start the Flask server, run:
+
+   ```bash
+   python app.py
+   ```
+
+The application will run at http://127.0.0.1:5000/.
+
+
